@@ -1,0 +1,48 @@
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap);
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+//создаем технический класс для ограничивающего контейнера
+._container {
+    max-width: 1046px;
+    margin: 0px auto;
+}
+//конец технических классов
+//HEADER----------------------------------------------------------*
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    &__container {
+        display: flex;
+        min-height: 104px;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+        margin: 0px 0px 0px 133px;
+    }
+}
+
+.menu {
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+//END-OF-HEADER------------------------------------------------------*
+//! Закончил на 1:00:42
