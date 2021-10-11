@@ -4,12 +4,16 @@
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 //создаем технический класс для ограничивающего контейнера
 ._container {
     max-width: 1046px;
     margin: 0px auto;
+    padding: 0px 15px; //для избегания прилипания контента к краю
+    box-sizing: content-box; //не включает padding в размер контейнера
 }
 //конец технических классов
 //HEADER----------------------------------------------------------*
@@ -23,26 +27,66 @@
         display: flex;
         min-height: 104px;
         align-items: center;
+        @media (max-width: 479px) { //размер под маленький телефон
+            min-height: 70px;
+        }
     }
 
     &__logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: inherit;
     }
 
     &__menu {
         margin: 0px 0px 0px 133px;
+        @media (max-width: 992px) { //размер под планшет
+            margin: 0px 0px 0px 80px;
+        }
+        @media (max-width: 767px) { //размер под телефон
+            margin: 0px 0px 0px 40px;
+        }
+        @media (max-width: 479px) { //размер под маленький телефон
+            margin: 0px 0px 0px 20px;
+        }
     }
 }
 
 .menu {
-
+    padding: 5px 0px; //отступ безопасности, во избежание прилипания к верху
     &__list {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
+        margin: 0px 21px 0px 0px;
+        &:last-child {
+            margin: 0;
+        }
     }
 
     &__link {
+        color: #737373;
+        font-weight: 600;
+        line-height: 171%; // 24/14*100% - 14px осоновной шрифт, 24px line height
+        @media (max-width: 479px) { //размер под маленький телефон
+            font-size: 18px;
+        }
     }
 }
+
 //END-OF-HEADER------------------------------------------------------*
-//! Закончил на 1:00:42
+
+//MAIN-----------------------------------------------------------------*
+.main{
+    flex: 1 1 auto;
+}
+//END-OF-MAIN----------------------------------------------------------*
+
+//FOOTER-----------------------------------------------------------------*
+.footer{
+
+}
+//END-OF-FOOTER----------------------------------------------------------*
+//! 1:25:45
