@@ -87,6 +87,18 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: content-box;
 }
 
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -154,4 +166,64 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
   flex: 1 1 auto;
+}
+.title-block {
+  position: relative;
+}
+.title-block__body {
+  padding: 184px 0px 191px 0px;
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+}
+.title-block__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
+}
+.title-block__title {
+  font-weight: 800;
+  font-size: 58px;
+  letter-spacing: 0.2px;
+  line-height: 138%;
+}
+.title-block__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.title-block__buttons {
+  display: inline-flex;
+}
+.title-block__button {
+  background: #FF7B47;
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 48px;
+  padding: 5px 36px;
+  color: #fff;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  line-height: 200%;
+}
+.title-block__button:not(:first-child) {
+  margin: 0px 0px 0px 10px;
+}
+.title-block__button_border {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #0D5C63;
+  color: #252B42;
+}
+.title-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.title-block__image img {
+  object-position: right;
 }
