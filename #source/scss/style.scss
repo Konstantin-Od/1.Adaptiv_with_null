@@ -90,6 +90,34 @@
 
 //END-OF-HEADER------------------------------------------------------*
 
+//HEADER-BLOCK---------------------------------------------------------*
+
+.header-block {
+    text-align: center;
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        &:not(:last-child) {
+            margin: 0px 0px 10px 0px;
+        }
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }        
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;       
+        color: #737373;
+    }
+}
+
+//END-OF-HEADER-BLOCK---------------------------------------------------*
+
 //MAIN-----------------------------------------------------------------*
 .main {
     flex: 1 1 auto;
@@ -104,6 +132,9 @@
     }
 
     &__advantages {
+    }
+
+    &__practice {
     }
 }
 .title-block {
@@ -284,42 +315,167 @@
 
 .advantages {
     padding: 80px 0px;
+    @media (max-width: 992px) {
+        padding: 50px 0px;            
+    }
 
     &__container {
     }
 
     &__header {
+        margin: 0px 0px 80px 0px;
     }
 
     &__body {
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: center;
+        margin: 0px -15px -30px 0px;        
     }
 
     &__columns {
+        flex: 0 1 25%;
+        padding: 0px 15px;
+        margin: 0px 0px 30px 0px;        
+        @media (max-width: 1000px) {
+            flex: 0 1 50%;            
+        }
+        @media (max-width: 560px) {
+            flex: 0 1 100%;            
+        }
     }
 
     &__item {
+        padding: 30px 0px;        
+        & > *:not(:last-child) {
+            margin: 0px 0px 10px 0px;
+        }
+        text-align: center;
+        background-color: #fff;
     }
 
     &__icon {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__value {
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0.2px;
+        line-height: 142%;
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }          
     }
 
     &__text {
+        color: #737373;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;        
     }
 }
 
-.header-block {
+//END-OF-ADVANTAGES-------------------------------------------------------*
+
+//PRACTICE---------------------------------------------------------------*
+
+.practice {
+    padding: 80px 0px;
+    @media (max-width: 992px) {
+        padding: 50px 0px;
+    }
+    @media (max-width: 767px) {
+        padding: 30px 0px;
+    }
+    @media (max-width: 560px) {
+        padding: 20px 0px;
+    }
+    &__container {
+
+    }
+
+    &__header {
+        padding: 45px 0px;
+        @media (max-width: 992px) {
+            padding: 30px 0px;
+        }
+        @media (max-width: 767px) {
+            padding: 0px 0px 30px 0px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px -30px 0px;
+    }
+
+    &__column {
+        flex: 0 1 25%;
+        padding: 0px 15px;
+        margin: 0px 0px 30px 0px;
+        @media (max-width: 992px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 560px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__item {
+        
+    }
+}
+
+.item-article {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%; //! необходимое условия для того,чтобы картинку придавить к низу
+    &__content {
+        padding: 30px;
+        & > *:not(:last-child) {
+            margin: 0px 0px 15px 0px;
+        }
+        flex: 1 1 auto;
+    }
+
+    &__link {
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }        
+    }
 
     &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: #252B42;
     }
 
     &__text {
+        color: #737373;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+    }
+
+    &__image {
+        padding: 0px 0px 60% 0px;
+        //60% = высота 138px / ширина 230px
+        display: block;
     }
 }
-//!2:31:19
-//END-OF-ADVANTAGES-------------------------------------------------------*
+
+//END-OF-PRACTICE--------------------------------------------------------*
 
 //FOOTER-----------------------------------------------------------------*
 .footer{
