@@ -136,6 +136,9 @@
 
     &__practice {
     }
+
+    &__about-us {
+    }
 }
 .title-block {
     position: relative;
@@ -477,6 +480,128 @@
 
 //END-OF-PRACTICE--------------------------------------------------------*
 
+//ABOUT-US---------------------------------------------------------------*
+
+.about-us {
+    padding: 100px 0px;
+    @media (max-width: 992px) {
+        padding: 40px 0px 0px 0px;
+    }
+    &__container {
+    }
+
+    &__header {
+        margin: 0px 0px 100px 0px;
+        @media (max-width: 992px) {
+            margin: 0px 0px 40px 0px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: stretch;
+        }
+    }
+
+    &__video {
+        flex: 0 0 57%;
+        //ширина видео в процентах от общей ширины контейнера
+        position: relative;
+        padding: 0px 0px 42.25% 0px;
+        //размерозадающий padding
+        //ширина определяется 442рх/1046рх - ширина флекс-контейнера
+        @media (max-width: 768px) {
+            padding: 0px 0px 56.25% 0px;
+        }
+
+        & iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 120px;
+        @media (max-width: 992px) {
+            padding: 0px 0px 0px 40px;
+        }
+        @media (max-width: 768px) {
+            padding: 0px;
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        margin: 0px 0px 10px 0px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        color: #737373;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__info {
+        padding: 30px 0px 0px 0px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+}
+
+.item-info {
+    display: flex;
+    
+    &__icon {
+        flex: 0 1 32px;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        &:not(:last-child) {
+            margin: 0px 0px 5px 0px;
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+}
+//! 46:50
+//END-OF-ABOUT-US--------------------------------------------------------*
 //FOOTER-----------------------------------------------------------------*
 .footer{
 
