@@ -139,6 +139,12 @@
 
     &__about-us {
     }
+
+    &__clients {
+    }
+
+    &__subscribe {
+    }
 }
 .title-block {
     position: relative;
@@ -484,8 +490,9 @@
 
 .about-us {
     padding: 100px 0px;
+    background-color: #fff;
     @media (max-width: 992px) {
-        padding: 40px 0px 0px 0px;
+        padding: 40px 0px 40px 0px;
     }
     &__container {
     }
@@ -600,8 +607,158 @@
         color: #737373;
     }
 }
-//! 46:50
+
 //END-OF-ABOUT-US--------------------------------------------------------*
+
+//CLIENTS----------------------------------------------------------------*
+
+.clients {
+    padding: 50px 0px;
+    &__container {
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0px -15px;
+    }
+
+    &__item {
+        padding: 0px 15px;
+        flex: 0 1 16.6667%;
+        text-align: center;
+        min-width: 140px;
+        &:not(:last-child) {
+            margin: 0px 0px 15px 0px;
+        }
+        & img {
+            max-width: 100%; //страховка на случай добавления большого изображения
+        }
+    }
+}
+
+//END-OF-CLIENTS---------------------------------------------------------*
+
+//SUBSCRIBE--------------------------------------------------------------*
+
+.subscribe {
+    position: relative;
+    padding: 0px 0px 20px 0px;
+    @media (min-width: 769px) {
+        &::before {
+            content: "";
+            background-color: #252B42;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 77px;
+        }
+    }
+    
+    &__container {
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        margin: 0px 17px; //32px - 15px = 17px учитываем padding от ._container
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px 30px 50px;
+        align-items: center;
+        background-color: #17213C;
+        border-radius: 2px;
+        @media (max-width: 982px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            padding: 20px;
+            margin: 0px -15px;
+        }
+        @media (max-width: 360px) {
+            padding: 10px;
+        }
+    }
+
+    &__title {
+        flex: 0 1 50%;
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        max-width: 266px;
+        @media (max-width: 982px) {
+            flex: 0 1 100%;
+            max-width: 100%;
+            margin: 0px 0px 10px 0px;
+            font-size: 18px;
+        }
+        @media (max-width: 360px) {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    &__form {
+        flex: 0 1 50%;
+        display: flex;
+        @media (max-width: 982px) {
+            flex: 0 1 100%;
+            width: 100%;
+        }
+    }
+
+    &__input {
+        flex: 1 1 auto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        color: #737373;
+        &:focus {
+            color: #252B42;
+        }
+        padding: 15px 0px 15px 20px;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        border-right: 0; //чтобы исключить двойную границу
+        box-sizing: border-box;
+        border-radius: 5px 0px 0px 5px;
+        @media (max-width: 360px) {
+            padding: 5px 0px 5px 10px;
+            line-height: 150%;
+        }
+    }
+
+    &__button {
+        background-color: #FF7B47;
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        border-radius: 0px 5px 5px 0px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        text-align: center;
+        padding: 0px 22.5px;
+        @media (max-width: 768px) {
+            padding: 0px 12px;
+        }
+        @media (max-width: 360px) {
+            padding: 0px 8px;
+            line-height: 150%;
+        }
+    }
+}
+//!1:17:14
+//END-OF-SUBSCRIBE------------------------------------------------------*
+
 //FOOTER-----------------------------------------------------------------*
 .footer{
 
