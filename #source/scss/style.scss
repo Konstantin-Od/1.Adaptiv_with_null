@@ -145,6 +145,14 @@
 
     &__subscribe {
     }
+
+    &__touch {
+        background-color: #F3F3F3;
+    }
+
+    &__contact-us {
+        background-color: #FAFAFA;
+    }
 }
 .title-block {
     position: relative;
@@ -756,8 +764,170 @@
         }
     }
 }
-//!1:17:14
+
 //END-OF-SUBSCRIBE------------------------------------------------------*
+
+//GET-IN-TOUCH----------------------------------------------------------*
+
+.touch {
+    padding: 40px 0px 80px 0px;
+    @media (min-width: 992px) {
+        padding: 80px 0px 148px 0px;
+    }
+
+    &__container {
+    }
+
+    &__header {
+        margin: 0px 0px 40px 0px;
+        @media (min-width: 992px) {
+            margin: 0px 0px 80px 0px;
+        }
+    }
+
+    &__body {
+        margin: 0px -15px;
+        @media (min-width: 992px) {
+            display: flex;
+            align-items: center;
+            padding: 0px 32.5px;
+            margin: 0px;
+        }        
+    }
+
+    &__item {
+        flex: 0 1 33.333%;
+    }
+}
+
+.item-touch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    @media (min-width: 992px) {
+        padding: 50px 15px; //отступы безопасности: чтобы контент не прилип к краю при адаптиве
+    }
+    padding: 30px 15px;
+    & > *:not(:last-child) {
+        margin: 0px 0px 15px 0px;
+    }
+    &_active {
+        background-color: #252B42;
+        color: #fff;
+        @media (min-width: 992px) {
+            padding: 80px 15px;
+        }
+        padding: 30px 15px;
+    }
+    &__icon {
+    }
+
+    &__emails {
+        text-align: center;
+    }
+
+    &__email {
+        font-weight: 600;
+        color: inherit;
+        font-size: 14px;
+        line-height: 171%;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__suuport {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+    }
+
+    &__button {
+        min-height: 44px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FF7B47;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #FF7B47;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        transition: all 0.3s ease 0s; //для анимации
+        &:hover {
+            background-color: #FF7B47;
+            color: #fff;
+        }
+        &_active {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+}
+
+//END-OF-GET-IN-TOUCH----------------------------------------------------*
+
+//CONTACT-US-------------------------------------------------------------*
+
+.contact-us {
+    padding: 40px 0px;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        flex: 1 1 auto;
+        & > *:not(:last-child) {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+
+    &__button {
+        flex: 0 1 180px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+        text-align: center;
+        background-color: #FF7B47;
+        border-radius: 5px;
+        max-height: 58px;
+        min-width: 163px;
+        margin: 0px 15.5px 0px 0px;
+        padding: 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+//!1:42:07
+//END-OF-CONTACT-US-----------------------------------------------------*
 
 //FOOTER-----------------------------------------------------------------*
 .footer{

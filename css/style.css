@@ -193,6 +193,13 @@ h1, h2, h3, h4, h5, h6 {
 .main {
   flex: 1 1 auto;
 }
+.main__touch {
+  background-color: #F3F3F3;
+}
+.main__contact-us {
+  background-color: #FAFAFA;
+}
+
 .title-block {
   position: relative;
 }
@@ -770,4 +777,149 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px 8px;
     line-height: 150%;
   }
+}
+
+.touch {
+  padding: 40px 0px 80px 0px;
+}
+@media (min-width: 992px) {
+  .touch {
+    padding: 80px 0px 148px 0px;
+  }
+}
+.touch__header {
+  margin: 0px 0px 40px 0px;
+}
+@media (min-width: 992px) {
+  .touch__header {
+    margin: 0px 0px 80px 0px;
+  }
+}
+.touch__body {
+  margin: 0px -15px;
+}
+@media (min-width: 992px) {
+  .touch__body {
+    display: flex;
+    align-items: center;
+    padding: 0px 32.5px;
+    margin: 0px;
+  }
+}
+.touch__item {
+  flex: 0 1 33.333%;
+}
+
+.item-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 15px;
+}
+@media (min-width: 992px) {
+  .item-touch {
+    padding: 50px 15px;
+  }
+}
+.item-touch > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.item-touch_active {
+  background-color: #252B42;
+  color: #fff;
+  padding: 30px 15px;
+}
+@media (min-width: 992px) {
+  .item-touch_active {
+    padding: 80px 15px;
+  }
+}
+.item-touch__emails {
+  text-align: center;
+}
+.item-touch__email {
+  font-weight: 600;
+  color: inherit;
+  font-size: 14px;
+  line-height: 171%;
+}
+.item-touch__email:hover {
+  text-decoration: underline;
+}
+.item-touch__suuport {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+.item-touch__button {
+  min-height: 44px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FF7B47;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #FF7B47;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease 0s;
+}
+.item-touch__button:hover {
+  background-color: #FF7B47;
+  color: #fff;
+}
+.item-touch__button_active {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.contact-us {
+  padding: 40px 0px;
+}
+.contact-us__body {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us__content {
+  flex: 1 1 auto;
+}
+.contact-us__content > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.contact-us__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+.contact-us__text {
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.contact-us__button {
+  flex: 0 1 180px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  background-color: #FF7B47;
+  border-radius: 5px;
+  max-height: 58px;
+  min-width: 163px;
+  margin: 0px 15.5px 0px 0px;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
